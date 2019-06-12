@@ -5,6 +5,7 @@ MAINTAINER Andreas Zitzelsberger "az@az82.de"
 ENV DERBY_VERSION=10.15.1.3
 ENV DERBY_HOME=/derby
 ENV DERBY_LIB=${DERBY_HOME}/lib
+ENV DERBY_SCHEMA=${DERBY_SCHEMA:-app}
 ENV CLASSPATH=${DERBY_LIB}/derby.jar:${DERBY_LIB}/derbynet.jar:${DERBY_LIB}/derbytools.jar:${DERBY_LIB}/derbyoptionaltools.jar:${DERBY_LIB}/derbyclient.jar
 
 ADD init.sh /init.sh

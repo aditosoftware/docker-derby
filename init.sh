@@ -11,7 +11,7 @@ else
     echo "Directory /dbs/${DBNAME} exists." 
   else
 tee /dbs/${DBNAME}.sql <<EOF
-    connect 'jdbc:derby:${DBNAME};create=true';
+    connect 'jdbc:derby:${DBNAME};user=${DERBY_USER};create=true';
 EOF
     /derby/bin/ij /dbs/${DBNAME}.sql
   fi

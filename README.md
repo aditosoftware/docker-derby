@@ -10,7 +10,8 @@ This repository provides a Docker image for Apache Derby using OpenJDK JRE.
 * Provides a volume _/dbs_ that will contain the Apache Derby databases
 * _derby.log_ is redirected to _stdout_
 * Basic health check that verifies that Derby is attached to the listen port
-* Use env variable **$DBNAME** to create a new db
+* Use env variable **$DBNAME** to create a new db  
+* USe env varialbe **$DERBY_USER** to set the default user and schema of **$DBNAME**. Default is "APP"
 
 # Run
 
